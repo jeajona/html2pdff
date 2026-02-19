@@ -7,8 +7,12 @@ workflows:
       java: 17
     scripts:
       - name: Flutter pub get
-        script: flutter pub get
+        script: |
+          cd html2pdf_flutter
+          flutter pub get
       - name: Build APK
-        script: flutter build apk --release
+        script: |
+          cd html2pdf_flutter
+          flutter build apk --release
     artifacts:
-      - build/app/outputs/flutter-apk/app-release.apk
+      - html2pdf_flutter/build/app/outputs/flutter-apk/app-release.apk
