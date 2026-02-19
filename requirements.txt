@@ -1,0 +1,4 @@
+kivy
+beautifulsoup4
+fpdf
+plyer
